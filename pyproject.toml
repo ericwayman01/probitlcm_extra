@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "probitlcm_extra"
+version = "0.0.1"
+description="Assists in the operation of the probitlcm package"
+authors = [
+  { name = "Eric Alan Wayman", email = "ewayman2@illinois.edu" },
+]
+readme = "README.rst"
+requires-python = ">=3.9"
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "numpy<=1.26.4",
+    "scipy",
+    "pandas",
+    "toml; python_version < '3.11'",
+    "probitlcm"
+]
+
+[project.urls]
+Homepage = "https://github.com/ericwayman01/probitlcm_extra"
