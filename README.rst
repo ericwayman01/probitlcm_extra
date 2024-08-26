@@ -1,3 +1,4 @@
+===============
 probitlcm_extra
 ===============
 
@@ -17,6 +18,6 @@ To install ``probitlcm_extra``, download the source package, unzip it, and run `
 The instructions for using ``probitlcm_extra`` are contained within the documentation for the ``probitlcm`` package, available at https://ericwayman.net/software/docs/probitlcm/ .
 
 License
--------
+=======
 
 ``probitlcm_extra`` is proved under the GNU General Public License v3, a copy of which can be found in the LICENSE file. By using, distributing, or contributing to this project, you agree to the terms and conditions of this license.
