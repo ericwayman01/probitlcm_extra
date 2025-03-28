@@ -1,6 +1,6 @@
 # This file is part of "probitlcm_extra" which is released under GPL v3.
 #
-# Copyright (c) 2022-2024 Eric Alan Wayman <ewayman2@illinois.edu>.
+# Copyright (c) 2022-2025 Eric Alan Wayman <ericwaymanpublications@mailworks.org>.
 #
 # This program is FLO (free/libre/open) software: you can redistribute
 # it and/or modify it under the terms of the GNU General Public License
@@ -15,7 +15,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import argparse, json, pathlib, shutil, toml
+import argparse, json, pathlib, shutil
+
+import sys
+if sys.version_info[1] < 11:
+    import toml
+else:
+    import tomllib as toml
 
 import numpy as np
 from probitlcm import _core
@@ -707,7 +713,7 @@ if __name__ == "__main__":
     # run other functions before running create_situation_params function
     # set seed
     config_file_path = run_dir.joinpath("config_simulation.toml")
-    with config_file_path.open() as fileObj:
+    with open(config_file_path, "rb") as fileObj:
         config = toml.load(fileObj)
     process_dir = config['laptop_process_dir']
     number_of_replics = config['number_of_replics']
