@@ -6,7 +6,7 @@ This package, ``probitlcm_extra`` facilitates the creation of the files necessar
 
 The ``probitlcm`` package implements the model described in the `manuscript <http://arxiv.org/abs/2408.13143>`_
 
-  Eric Alan Wayman, Steven Andrew Culpepper, Jeff Douglas, and Jesse Bowers. "A Restricted Latent Class Model with Polytomous Ordinal Correlated Attributes and Respondent-Level Covariates." arXiv preprint arXiv:2408.13143, 2024.
+  Eric Alan Wayman, Steven Andrew Culpepper, Jeff Douglas, and Jesse Bowers. "A restricted latent class model with polytomous attributes and respondent-level covariates." arXiv preprint arXiv:2408.13143, 2024.
 
 The ``probitlcmlongit`` package implements the model described in the `manuscript <http://arxiv.org/abs/2503.20940>`_
 

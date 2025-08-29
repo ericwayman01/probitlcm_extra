@@ -10,21 +10,19 @@ authors = [
   { name = "Eric Alan Wayman", email = "ericwaymanpublications@mailworks.org" },
 ]
 readme = "README.rst"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 classifiers = [
   "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13"
 ]
 
 dependencies = [
-    "numpy<=1.26.4",
+    "numpy",
     "scipy",
     "pandas",
-    "toml; python_version < '3.11'",
     "probitlcm"
 ]
 

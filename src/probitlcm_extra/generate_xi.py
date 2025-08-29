@@ -15,13 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import argparse, pathlib, json
-
-import sys
-if sys.version_info[1] < 11:
-    import toml
-else:
-    import tomllib as toml
+import argparse, json, pathlib, tomllib
 
 import numpy as np
 from scipy.stats import truncnorm
@@ -105,7 +99,7 @@ if __name__ == "__main__":
     # set seed
     config_file_path = run_dir.joinpath("config_simulation.toml")
     with open(config_file_path, "rb") as fileObj:
-        config = toml.load(fileObj)
+        config = tomllib.load(fileObj)
     process_dir = config['laptop_process_dir']
     number_of_replics = config['number_of_replics']
     situation_num_zb = situation_num - 1
